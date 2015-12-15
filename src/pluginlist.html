@@ -1,0 +1,11 @@
+<template>
+  <require from="blur-image"></require>
+  
+  <h2>Plugins</h2>
+  
+  <p>(List fetched from the <a href="https://github.com/aurelia/registry">official registry</a>.)</p>
+
+  <ul repeat.for="plugin of plugins">
+    <li><a href="http://github.com/${plugin.location}">${plugin.name}</a><span show.bind="plugin.repoInformation.description"> –</span> ${plugin.repoInformation.description}</li>
+  </ul>
+</template>
