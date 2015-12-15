@@ -12,7 +12,7 @@ export class Resources {
   }
 
   activate(params, routeConfig, navigationInstruction) {
-    return this.http.get('https://cdn.rawgit.com/riddla/awesome-aurelia/master/README.md')
+    return this.http.get('https://raw.githubusercontent.com/riddla/awesome-aurelia/master/README.md')
       .then(response => {
         this.content = response.response;
         this.formattedContent = this.marked(this.content);
