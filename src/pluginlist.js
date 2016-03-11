@@ -19,13 +19,15 @@ export class Resources {
         for (var key of Object.keys(this.pluginsRaw)) {
           let plugin = this.pluginsRaw[key];
           let url = 'https://api.github.com/repos/' + plugin.location + '?access_token=c0f3e86108889f523f8c3bc7e0d850d75f61feda';  
-          this.http.get(url)
-            .then(response => {
-              let foo = plugin;
-              let repoInformation = JSON.parse(response.response);
-              foo.repoInformation = repoInformation;
-              this.plugins.push(foo);
-            });
+        //   this.http.get(url)
+        //     .then(response => {
+        //       let foo = plugin;
+        //       let repoInformation = JSON.parse(response.response);
+        //       foo.repoInformation = repoInformation;
+        //       this.plugins.push(foo);
+        //     });
+        
+            this.plugins.push(plugin);
         }
       });
   }
