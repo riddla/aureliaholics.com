@@ -12,6 +12,23 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
+  bundles: {
+    "app-build-be395d7a57.js": [
+      "app.html!github:systemjs/plugin-text@0.0.3.js",
+      "app.js",
+      "blur-image.js",
+      "child-router.html!github:systemjs/plugin-text@0.0.3.js",
+      "child-router.js",
+      "main.js",
+      "nav-bar.html!github:systemjs/plugin-text@0.0.3.js",
+      "pluginlist.html!github:systemjs/plugin-text@0.0.3.js",
+      "pluginlist.js",
+      "resources.html!github:systemjs/plugin-text@0.0.3.js",
+      "resources.js",
+      "welcome.html!github:systemjs/plugin-text@0.0.3.js",
+      "welcome.js"
+    ]
+  },
 
   map: {
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0-beta.1.0.1",
