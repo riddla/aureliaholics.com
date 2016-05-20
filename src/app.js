@@ -1,6 +1,8 @@
 export class App {
   configureRouter(config, router) {
     config.title = 'Aurelia';
+    config.options.pushState = true;
+    config.options.hashChange = false;
     config.map([
       { route: ['', 'welcome'], name: 'welcome', moduleId: 'welcome', nav: true, title: 'Welcome' },
       { route: 'resources', name: 'resources', moduleId: 'resources', nav: true, title: 'Resources' },
